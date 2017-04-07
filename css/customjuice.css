@@ -1,0 +1,416 @@
+/* Remove the navbar's default rounded borders and increase the bottom margin */
+.navbar {
+  margin-bottom: 50px;
+  border-radius: 0;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+    text-align: center;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+/* Remove the jumbotron's default bottom margin */
+ .jumbotron {
+  margin-bottom: 0;
+}
+
+/* Removes Carets on dropdown based on resize */
+#caret{
+  display: inline-block;
+}
+
+@media (max-width: 767px) {
+#caret{
+    display: none;
+}
+.dropdown:hover .dropdown-menu {
+    display: none;
+}}
+
+.size{
+  margin: 0 0;
+  padding-left: 38%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  font-size: 32px;
+  color: black;
+}
+
+/*bananas tags*/
+  #bananas{
+    text-align: center;
+  }
+  #selectedbananas{
+    display: none;
+  }
+  .bananas:hover{
+    background-image: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)), url("../images/bananas.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
+/************************************/
+
+/* Granny Smith apple tags*/
+  #grannyapples{
+    text-align: center;
+  }
+  #selectedgrannyapples{
+    display: none;
+  }
+  .grannyapples:hover{
+    background-image: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)), url("../images/grannyapples.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
+/************************************/
+
+/* Pink Cripps apple tags*/
+  #regapples{
+    text-align: center;
+  }
+  #selectedregapples{
+    display: none;
+  }
+  .regapples:hover{
+    background-image: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)), url("../images/regapples.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
+/************************************/
+
+/*pear tags*/
+  #pears{
+    text-align: center;
+  }
+  #selectedpears{
+    display: none;
+  }
+  .pears:hover{
+    background-image: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)), url("../images/pears.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
+/****************************************/
+
+/*Orange tags*/
+  #oranges{
+    text-align: center;
+  }
+  #selectedoranges{
+    display: none;
+  }
+  .oranges:hover{
+    background-image: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)), url("../images/oranges.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
+/************************************/
+
+/*Lemon tags*/
+  #lemons{
+    text-align: center;
+  }
+  #selectedlemons{
+    display: none;
+  }
+  .lemons:hover{
+    background-image: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)), url("../images/lemons.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
+/************************************/
+
+/*Lemon tags*/
+  #pineapple{
+    text-align: center;
+  }
+  #selectedpineapple{
+    display: none;
+  }
+  .pineapple:hover{
+    background-image: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)), url("../images/pineapple.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
+/************************************/
+
+/*Lemon tags*/
+  #blueberry{
+    text-align: center;
+  }
+  #selectedblueberry{
+    display: none;
+  }
+  .blueberry:hover{
+    background-image: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)), url("../images/blueberry.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
+/************************************/
+
+/*Lemon tags*/
+  #peach{
+    text-align: center;
+  }
+  #selectedpeach{
+    display: none;
+  }
+  .peach:hover{
+    background-image: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)), url("../images/peach.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
+/************************************/
+#strawberry{
+  display:none;
+}
+
+/*Honey tags*/
+  #honey{
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .honey:hover{
+    background-image: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)), url("../images/honey.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
+
+
+  #selectedhoney{
+    display: none;
+  }
+/***********************************/
+
+/*chiaseed tags*/
+  #chiaseed{
+    text-align: center;
+  }
+  .chiaseed:hover{
+      background-image: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)), url("../images/chiaseed.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      cursor: pointer;
+  }
+  #selectedchiaseed{
+    display:none;
+  }
+/*********************************/
+
+/*flaxseed tags*/
+  #flaxseed{
+    text-align: center;
+  }
+  .flaxseed:hover{
+      background-image: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)), url("../images/flaxseed.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      cursor: pointer;
+  }
+  #selectedflaxseed{
+    display:none;
+  }
+/**************************/
+
+/*Almonds tags*/
+  #almonds{
+    text-align: center;
+  }
+
+  .almonds:hover {
+    background-image: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)), url("../images/almonds.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
+  #selectedalmonds{
+    display:none;
+  }
+/**************************/
+
+/*Walnut tags*/
+  #walnut{
+    text-align: center;
+  }
+
+  .walnut:hover {
+    background-image: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)), url("../images/walnut.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
+  #selectedwalnut{
+    display:none;
+  }
+/**************************/
+
+/*Tomato tags*/
+  #tomato{
+    text-align: center;
+  }
+
+  .tomato:hover {
+    background-image: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)), url("../images/tomato.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
+  #selectedtomato{
+    display:none;
+  }
+/**************************/
+
+/*Cucumber tags*/
+  #cucumber{
+    text-align: center;
+  }
+
+  .cucumber:hover {
+    background-image: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)), url("../images/cucumber.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
+  #selectedcucumber{
+    display:none;
+  }
+/**************************/
+
+/*Kale tags*/
+  #kale{
+    text-align: center;
+  }
+
+  .kale:hover {
+    background-image: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)), url("../images/kale.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
+  #selectedkale{
+    display:none;
+  }
+/**************************/
+
+/*Cellery tags*/
+  #cellery{
+    text-align: center;
+  }
+
+  .cellery:hover {
+    background-image: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)), url("../images/cellery.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
+  #selectedcellery{
+    display:none;
+  }
+/**************************/
+
+/*Lettuce tags*/
+  #lettuce{
+    text-align: center;
+  }
+
+  .lettuce:hover {
+    background-image: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)), url("../images/lettuce.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
+  #selectedlettuce{
+    display:none;
+  }
+/**************************/
+
+/*Spinach tags*/
+  #spinach{
+    text-align: center;
+  }
+
+  .spinach:hover {
+    background-image: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)), url("../images/spinach.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
+  #selectedspinach{
+    display:none;
+  }
+/**************************/
+
+#ingredlist{
+  display:none;
+}
+
+
+#smoz{
+  display:none;
+}
+#smoz{
+  display:none;
+}
+
+#smoz{
+  display:none;
+}
+#medoz{
+  display:none;
+}
+#lgoz{
+  display: none;
+}
+#vegjuice{
+  display: none;
+}
+#sweeteners{
+  display: none;
+}
+#seednut{
+  display: none;
+}
+#fruitjuice{
+  display: none;
+}
+.changesize{
+  -webkit-appearance: none;
+  font-size: 12px;
+  text-align: inherit;
+  text-decoration: underline;
+  float: right;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+}
+.size:hover {
+  font-size: 45px;
+  background-color: #f2f2f2;
+  cursor: pointer;
+}
+/* Add a gray background color and some padding to the footer */
+footer {
+background-color: #f2f2f2;
+  padding: 25px;
+}

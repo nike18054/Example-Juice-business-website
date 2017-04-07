@@ -1,0 +1,174 @@
+$main-size: 240px;
+$basecolor: #18272a;
+// ^^^^ feel free to play with the size
+
+@font-face {
+	font-family: 'random';
+	src: url(data:application/x-font-ttf;charset=utf-8;base64,AAEAAAALAIAAAwAwT1MvMo6RND0AAAC8AAAAYGNtYXDZQU59AAABHAAAAExnYXNwAAAAEAAAAWgAAAAIZ2x5ZheoWncAAAFwAAAAaGhlYWQA7EsrAAAB2AAAADZoaGVhB3IDxgAAAhAAAAAkaG10eAYAAGAAAAI0AAAAFGxvY2EAKABIAAACSAAAAAxtYXhwAAcACQAAAlQAAAAgbmFtZfDBmBYAAAJ0AAABMHBvc3QAAwAAAAADpAAAACAAAwQAAZAABQAAApkCzAAAAI8CmQLMAAAB6wAzAQkAAAAAAAAAAAAAAAAAAAABAACAAAAAAAAAAAAAAAAAAABAAAAnEwPA/8D/wAPAAEAAAAABAAAAAAAAAAAAAAAgAAAAAAACAAAAAwAAABQAAwABAAAAFAAEADgAAAAKAAgAAgACAAEAICcT//3//wAAAAAAICcT//3//wAB/+PY8QADAAEAAAAAAAAAAAAAAAEAAf//AA8AAQAAAAAAAAAAAAIAADc5AQAAAAABAAAAAAAAAAAAAgAANzkBAAAAAAEAAAAAAAAAAAACAAA3OQEAAAAAAQBgAGADsAMQAAYAABM3FwEXCQFgg5oBq4j9zf7jAX2CmQGqh/3XAR0AAAABAAAAAQAAQJyXM18PPPUACwQAAAAAAM8PA48AAAAAzw8DjwAAAAADsAMQAAAACAACAAAAAAAAAAEAAAPA/8AAAAQAAAAAAAOwAAEAAAAAAAAAAAAAAAAAAAAFAAAAAAAAAAAAAAAAAgAAAAQAAGAAAAAAAAoAFAAeADQAAQAAAAUABwABAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAA4ArgABAAAAAAABAAwAAAABAAAAAAACAA4AQAABAAAAAAADAAwAIgABAAAAAAAEAAwATgABAAAAAAAFABYADAABAAAAAAAGAAYALgABAAAAAAAKACgAWgADAAEECQABAAwAAAADAAEECQACAA4AQAADAAEECQADAAwAIgADAAEECQAEAAwATgADAAEECQAFABYADAADAAEECQAGAAwANAADAAEECQAKACgAWgByAGEAbgBkAG8AbQBWAGUAcgBzAGkAbwBuACAAMQAuADAAcgBhAG4AZABvAG1yYW5kb20AcgBhAG4AZABvAG0AUgBlAGcAdQBsAGEAcgByAGEAbgBkAG8AbQBHAGUAbgBlAHIAYQB0AGUAZAAgAGIAeQAgAEkAYwBvAE0AbwBvAG4AAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==) format('truetype'),
+		 url(data:application/font-woff;charset=utf-8;base64,d09GRk9UVE8AAAQoAAoAAAAAA+AAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABDRkYgAAAA9AAAALgAAAC4j/XfZ09TLzIAAAGsAAAAYAAAAGCOkTQ9Y21hcAAAAgwAAABMAAAATNlBTn1nYXNwAAACWAAAAAgAAAAIAAAAEGhlYWQAAAJgAAAANgAAADYA7EsraGhlYQAAApgAAAAkAAAAJAdyA8ZobXR4AAACvAAAABQAAAAUBgAAYG1heHAAAALQAAAABgAAAAYABVAAbmFtZQAAAtgAAAEwAAABMPDBmBZwb3N0AAAECAAAACAAAAAgAAMAAAEABAQAAQEBB3JhbmRvbQABAgABAD74HAL4GwP4GAQeCgAJdlYl/4uLHgoACXZWJf+LiwwHi0v6lPpUBR0AAAB3Dx0AAAB8ER0AAAAJHQAAAK8SAAYBAQcNDxEUGXJhbmRvbXJhbmRvbXUwdTF1MjB1MjcxMwAAAgGJAAMABQEBBAcKDSv+lA7+lA7+lA78lA7r+BEV9xf3Fvcu+y34P/g+9xz7G/zH/L37sfexBQ76lBT6lBWLDAoAAwQAAZAABQAAApkCzAAAAI8CmQLMAAAB6wAzAQkAAAAAAAAAAAAAAAAAAAABAACAAAAAAAAAAAAAAAAAAABAAAAnEwPA/8D/wAPAAEAAAAABAAAAAAAAAAAAAAAgAAAAAAACAAAAAwAAABQAAwABAAAAFAAEADgAAAAKAAgAAgACAAEAICcT//3//wAAAAAAICcT//3//wAB/+PY8QADAAEAAAAAAAAAAAAAAAEAAf//AA8AAQAAAAEAAJGYMBtfDzz1AAsEAAAAAADPDwOPAAAAAM8PA48AAAAAA7ADEAAAAAgAAgAAAAAAAAABAAADwP/AAAAEAAAAAAADsAABAAAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAAAIAAAAEAABgAABQAAAFAAAAAAAOAK4AAQAAAAAAAQAMAAAAAQAAAAAAAgAOAEAAAQAAAAAAAwAMACIAAQAAAAAABAAMAE4AAQAAAAAABQAWAAwAAQAAAAAABgAGAC4AAQAAAAAACgAoAFoAAwABBAkAAQAMAAAAAwABBAkAAgAOAEAAAwABBAkAAwAMACIAAwABBAkABAAMAE4AAwABBAkABQAWAAwAAwABBAkABgAMADQAAwABBAkACgAoAFoAcgBhAG4AZABvAG0AVgBlAHIAcwBpAG8AbgAgADEALgAwAHIAYQBuAGQAbwBtcmFuZG9tAHIAYQBuAGQAbwBtAFIAZQBnAHUAbABhAHIAcgBhAG4AZABvAG0ARwBlAG4AZQByAGEAdABlAGQAIABiAHkAIABJAGMAbwBNAG8AbwBuAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=) format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+html {
+  background: $basecolor;
+  display: table;
+  min-height: 100%;
+  min-width: 100%;
+  box-shadow: inset 0 0 300px 0 black;
+}
+
+body {
+  text-align: center;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fade {
+  to {
+    opacity: .5;
+  }
+}
+
+.circle_wrapper {
+  width: $main-size;
+  height: $main-size;
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  border-radius: 100%;
+  box-shadow: 0 0 $main-size 0 black;
+  margin-left: $main-size / -2;
+  margin-top: $main-size / -2;
+}
+
+.circle {
+  width: $main-size;
+  height: $main-size;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: $main-size / -2;
+  margin-top: $main-size / -2;
+  background-color: mix($basecolor - 50, cyan);
+  overflow: hidden;
+  border-radius: 100%;
+  // box-shadow: 0 0 $main-size * 0.025 0 rgba(white, .5);
+  transition: background-color 200ms ease;
+  animation: spin 2s linear infinite;
+  animation-play-state: paused;
+  &::after {
+    $size: $main-size * 0.75;
+    content: '';
+    display: block;
+    width: $size;
+    height: $size;
+    top: 50%;
+    left: 50%;
+    margin-top: $size / -2;
+    margin-left: $size / -2;
+    background-color: transparent;
+    position: absolute;
+    z-index: 10;
+    border-radius: 50%;
+    $shadowVarA: $main-size * 0.1;
+    $shadowVarB: $main-size * 0.25;
+    $shadowVarC: $main-size * 0.02;
+    $shadowVarD: $main-size * 0.075;
+    box-shadow: $shadowVarA $shadowVarB $shadowVarB $shadowVarC rgba(adjust-hue(cyan, $shadowVarC),.25), 0 ($shadowVarA * -1) $shadowVarB $shadowVarC rgba(adjust-hue(yellow, 0deg),.55), $shadowVarA 0 $shadowVarB $shadowVarC rgba(adjust-hue(green, 25deg),.35), ($shadowVarA * -1) $shadowVarB $shadowVarB $shadowVarC rgba(adjust-hue(blue, -60deg),.75), ($shadowVarD * 0.03) ($shadowVarD * -0.03) 0 $shadowVarA * 0.75 rgba(tint(blue,50),.25), ($shadowVarD * 0.03) ($shadowVarD * 0.02) 0 $shadowVarA * 0.75 rgba(tint(lime,50),.25), ($shadowVarD * -0.01) ($shadowVarD * 0.03) 0 $shadowVarA * 0.75 rgba(tint(cyan,10),.5) ;
+  }
+    
+  &::before {
+    $size: $main-size * 1;
+    content: '';
+    display: block;
+    width: $size;
+    height: $size;
+    top: 50%;
+    left: 50%;
+    margin-top: $size / -2;
+    margin-left: $size / -2;
+    position: absolute;
+    z-index: 11;
+    border-radius: 50%;
+    box-shadow: inset 0 0 $main-size * 0.0625 1px rgba(black, .35);
+  }
+}
+
+.circle_over {
+  $size: $main-size * 0.75;
+  width: $size;
+  height: $size;
+  top: 50%;
+  left: 50%;
+  font-weight: bold;
+  font-size: $main-size * 0.45;
+  text-transform: uppercase;
+  margin-left: $size / -2;
+  margin-top: $size / -2;
+  position: absolute;
+  // background-image: radial-gradient(circle, rgba(tint($basecolor,10), 0), $basecolor);
+  display: inline-block;
+  z-index: 12;
+  overflow: hidden;
+  border-radius: 100%;
+  .check {
+    font-size: $main-size * 0.6;
+    position: absolute;
+    font-family: "random";
+    line-height: $size;
+    width: $size;
+    height: $size;
+    font-family: 'random';
+	  speak: none;
+	  font-style: normal;
+	  font-weight: normal;
+	  font-variant: normal;
+	  text-transform: none;
+	  /* Better Font Rendering =========== */
+	  -webkit-font-smoothing: antialiased;
+	  -moz-osx-font-smoothing: grayscale;
+    border-radius: 100%;
+    transition: opacity 400ms ease-in, text-shadow 200ms linear;
+    &.blur {
+      color: $basecolor;
+      text-shadow: 0px 2px 0 rgba(white,.15);
+      background: $basecolor;
+      opacity: 1;
+    }
+    &.lime {
+      background-image: radial-gradient(cyan,lime);
+      // box-shadow: inset 0 0 40px 0 rgba(cyan,.25);
+      color: transparent;
+      -webkit-background-clip: text;
+      opacity: 0;
+    }
+    &.fade {
+      color: $basecolor + 20;
+      opacity: 1;
+    }
+  }
+}
+
+a.circle_wrapper:hover,
+a.circle_wrapper:focus {
+  .circle {
+    animation-play-state: running;
+    background-color: mix($basecolor - 20, cyan);
+  }
+  .check.lime {
+    opacity: 1;
+  }
+  .check.fade {
+    opacity: 0;
+  }
+  .check.blur {
+    text-shadow: 0px 2px 0 rgba(black,.15);
+  }
+}

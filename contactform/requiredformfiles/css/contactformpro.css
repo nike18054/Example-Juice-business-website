@@ -1,0 +1,116 @@
+/* inner global settings */
+div.contactformpro h2 {
+    color:#000;
+    font-size:18px;
+    line-height:22px;
+    border-bottom:1px solid #000;
+    margin-bottom:11px;
+    padding-bottom:4px;
+}
+div.contactformpro td, 
+div.contactformpro p, 
+div.contactformpro label, 
+div.contactformpro input{
+    font-size:12px;color:#000;
+}
+div.contactformpro td{
+    padding: 4px;
+}
+div.contactformpro p{
+    margin-bottom:10px;
+}
+
+/* custom settings */
+div.contactformpro-default {
+    background-color:#FFF;
+    color:#000;
+    padding:20px;   
+    font-family: arial, sans-serif;
+}
+div.contactformpro-default h2 {
+    color:#666;
+    border-bottom:2px solid #E9E9E9;
+}
+
+div.contactformpro-black {
+	border:1px solid #000;
+    background-color:#FFF;
+    background:#fff url(images/fade-black.jpg) repeat-x left top;
+    color:#000;
+    padding:20px;
+    -moz-border-radius: 5px;
+	border-radius: 5px;
+    font-family: arial, sans-serif;
+}
+div.contactformpro-back h2 {
+    color:#FFF;
+    border-bottom:1px solid #FFF;
+}
+
+div.contactformpro-blue {
+	border:1px solid #369;
+    background-color:#FFF;
+    background:#fff url(images/fade-blue.jpg) repeat-x left top;
+    color:#000;
+    padding:20px;
+    -moz-border-radius: 5px;
+	border-radius: 5px;   
+    font-family: arial, sans-serif;
+}
+
+div.contactformpro-dark {
+    background-color:#000;
+    color:#FFF;
+    padding:20px;
+    -moz-border-radius: 5px;
+	border-radius: 5px;
+    font-family: arial, sans-serif;
+}
+div.contactformpro-dark td, 
+div.contactformpro-dark p, 
+div.contactformpro-dark label, 
+div.contactformpro-dark input{
+    font-size:12px;color:#FFF;
+}
+div.contactformpro-dark h2 {
+	color:#FFF;
+    border-bottom:2px solid #FFF;
+}
+
+div.contactformpro-green {
+	border:1px solid #060;
+    background-color:#FFF;
+    background:#fff url(images/fade-green.jpg) repeat-x left top;
+    color:#000;
+    padding:20px; 
+    -moz-border-radius: 5px;
+	border-radius: 5px;  
+    font-family: arial, sans-serif;
+}
+div.contactformpro-grey {
+	border:1px solid #999;
+    background-color:#FFF;
+    background:#fff url(images/fade-grey.jpg) repeat-x left top;
+    color:#000;
+    padding:20px;   
+    font-family: arial, sans-serif;
+}
+div.contactformpro-orange {
+	border:1px solid #f60;
+	background-color:#FFF;
+    background:#fff url(images/fade-orange.jpg) repeat-x left top;
+    color:#000;
+    padding:20px;   
+    font-family: arial, sans-serif;
+}
+div.contactformpro-red {
+	border:1px solid #900;
+    background-color:#FFF;
+    background:#fff url(images/fade-red.jpg) repeat-x left top;
+    color:#000;
+    padding:20px;   
+    font-family: arial, sans-serif;
+}
+
+
+

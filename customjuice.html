@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Oregon Juice Company</title>
+    <link rel="icon" href="Images/NGfavicon1.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Dropdown hover css link-->
+    <link rel="stylesheet" type="text/css" href="css/dropdownhover.css">
+
+    <link rel="stylesheet" type="text/css" href="css/customjuice.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+  </head>
+
+  <body>
+
+    <!--Left side of navbar-->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li><a href="home.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+
+            <li class="dropdown"><a class="dropdown-toggle" data-hover="dropdown" href="juices.html"> Juices<span class="caret" id="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="originaljuices.html">Original</a></li>
+                <li><a href="vitaminjuices.html">Vitamin Boosts</a></li>
+                <li><a href="organicjuices.html">Organic Juices</a></li>
+                <li><a href="workoutjuices.html">Pre and Post Workout</a></li>
+              </ul>
+            </li>
+
+            <li class="active"><a href="customjuice.html"><span class="glyphicon glyphicon-file"></span> Custom Juice</a></li>
+
+            <li ><a href="locations.html"><span class="glyphicon glyphicon-map-marker"></span> Locations</a></li>
+
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Log in</a></li>
+
+            <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span>Shopping Cart</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+    <!--Page Content -->
+    <div class="container-fluid" style="margin-top: 70px;">
+      <noscript>Sorry, your browser does not support or has JavaScript disabled. Please update or enable JavaScript to use this website without error.</noscript>
+      <h1 style="text-align:center;">Create your own custom juice!</h1>
+      <hr>
+      <div id="choosesize">
+        <h2 style="text-align:center;">Choose a size</h2>
+
+        <div class="row" onclick="document.getElementById('choosesize').style.display='none'; document.getElementById('fruitjuice').style.display='block'">
+
+          <div class="col-sm-4">
+            <p onclick="document.getElementById('smoz').style.display='block'; document.getElementById('choosensize').style.display='block'; document.getElementById('ingredlist').style.display='block'" class="size">12 oz</p>
+          </div>
+
+          <div class="col-sm-4">
+            <p onclick="document.getElementById('medoz').style.display='block'; document.getElementById('choosensize').style.display='block'; document.getElementById('ingredlist').style.display='block'" class="size">16 oz</p>
+          </div>
+
+          <div class="col-sm-4">
+            <p onclick="document.getElementById('lgoz').style.display='block'; document.getElementById('choosensize').style.display='block'; document.getElementById('ingredlist').style.display='block'" class="size">24 oz</p>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col-xs-3">
+        <div class="sidenav">
+          <div id="choosensize">
+            <h3 id="smoz"> Your Size: 12 oz<button type="button" class="changesize" onclick="document.getElementById('choosesize').style.display='block'; document.getElementById('choosensize').style.display='none'; document.getElementById('fruitjuice').style.display='none'; document.getElementById('ingredlist').style.display='none'; document.getElementById('smoz').style.display='none';document.getElementById('medoz').style.display='none';document.getElementById('lgoz').style.display='none'; document.getElementById('seednut').style.display='none';">Change</button></h3>
+            <h3 id="medoz"> Your Size: 16 oz<button type="button" class="changesize" onclick="document.getElementById('choosesize').style.display='block'; document.getElementById('choosensize').style.display='none'; document.getElementById('fruitjuice').style.display='none'; document.getElementById('ingredlist').style.display='none'; document.getElementById('smoz').style.display='none';document.getElementById('medoz').style.display='none';document.getElementById('lgoz').style.display='none'; document.getElementById('seednut').style.display='none';">Change</button></h3>
+            <h3 id="lgoz"> Your Size: 24 oz<button type="button" class="changesize" onclick="document.getElementById('choosesize').style.display='block'; document.getElementById('choosensize').style.display='none'; document.getElementById('fruitjuice').style.display='none'; document.getElementById('ingredlist').style.display='none'; document.getElementById('smoz').style.display='none';document.getElementById('medoz').style.display='none';document.getElementById('lgoz').style.display='none'; document.getElementById('seednut').style.display='none';">Change</button></h3>
+          </div>
+          <br>
+          <div id="ingredlist">
+            <h3>Your Ingredients:</h3>
+            <h4 id="selectedgrannyapples">Granny Smith Apples<button type="button" class="close" onclick="document.getElementById('selectedgrannyapples').style.display='none';">&times;</button></h4>
+            <h4 id="selectedbananas">Banana<button type="button" class="close" onclick="document.getElementById('selectedbananas').style.display='none';">&times;</button></h4>
+            <h4 id="selectedpears">Pear<button type="button" class="close" onclick="document.getElementById('selectedpears').style.display='none';">&times;</button></h4>
+            <h4 id="selectedregapples">Pink Cripps Apples<button type="button" class="close" onclick="document.getElementById('selectedregapples').style.display='none';">&times;</button></h4>
+            <h4 id="selectedoranges">Orange<button type="button" class="close" onclick="document.getElementById('selectedoranges').style.display='none';">&times;</button></h4>
+            <h4 id="selectedlemons">Lemon<button type="button" class="close" onclick="document.getElementById('selectedlemons').style.display='none';">&times;</button></h4>
+            <h4 id="selectedpineapple">Pineapple<button type="button" class="close" onclick="document.getElementById('selectedpineapple').style.display='none';">&times;</button></h4>
+            <h4 id="selectedblueberry">Blueberry<button type="button" class="close" onclick="document.getElementById('selectedblueberry').style.display='none';">&times;</button></h4>
+            <h4 id="selectedpeach">Peach<button type="button" class="close" onclick="document.getElementById('selectedpeach').style.display='none';">&times;</button></h4>
+            <h4 id="selectedtomato">Tomato<button type="button" class="close" onclick="document.getElementById('selectedtomato').style.display='none';">&times;</button></h4>
+            <h4 id="selectedcucumber">Cucumber<button type="button" class="close" onclick="document.getElementById('selectedcucumber').style.display='none';">&times;</button></h4>
+            <h4 id="selectedkale">Kale<button type="button" class="close" onclick="document.getElementById('selectedkale').style.display='none';">&times;</button></h4>
+            <h4 id="selectedlettuce">Lettuce<button type="button" class="close" onclick="document.getElementById('selectedlettuce').style.display='none';">&times;</button></h4>
+            <h4 id="selectedspinach">Spinach<button type="button" class="close" onclick="document.getElementById('selectedspinach').style.display='none';">&times;</button></h4>
+            <h4 id="selectedcellery">Cellery<button type="button" class="close" onclick="document.getElementById('selectedcellery').style.display='none';">&times;</button></h4>
+            <h4 id="selectedalmonds">Almond<button type="button" class="close" onclick="document.getElementById('selectedalmonds').style.display='none';">&times;</button></h4>
+            <h4 id="selectedwalnut">Walnut<button type="button" class="close" onclick="document.getElementById('selectedwalnut').style.display='none';">&times;</button></h4>
+            <h4 id="selectedflaxseed">Flax seed<button type="button" class="close" onclick="document.getElementById('selectedflaxseed').style.display='none';">&times;</button></h4>
+            <h4 id="selectedchiaseed">Chia seed<button type="button" class="close" onclick="document.getElementById('selectedchiaseed').style.display='none';">&times;</button></h4>
+            <h4 id="selectedhoney">Honey<button type="button" class="close" onclick="document.getElementById('selectedhoney').style.display='none';">&times;</button></h4>
+          </div>
+        </div>
+      </div>
+
+      <div cLass="col-xs-9">
+
+        <div class="row" id="fruitjuice">
+          <div class="row">
+            <h2 style="text-align:center;">Choose your fruits</h2>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-4">
+              <div onclick="document.getElementById('selectedgrannyapples').style.display='block';" class="well well-lg grannyapples" id="grannyapples">
+                <a class='circle_wrapper' >
+                  <div class='circle_over'>
+                    <div class='check blur'>✓</div>
+                    <div class='check lime'>✓</div>
+                    <div class='check fade'>✓</div>
+                  </div>
+                  <div class='circle'></div>
+                </a>
+                <h3>Granny Smith Apples</h3>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div onclick="document.getElementById('selectedregapples').style.display='block';" class="well well-lg regapples" id="regapples">
+                <a class='circle_wrapper'>
+                  <div class='circle_over'>
+                    <div class='check blur'>✓</div>
+                    <div class='check lime'>✓</div>
+                    <div class='check fade'>✓</div>
+                  </div>
+                  <div class='circle'></div>
+                </a>
+                <h3>Pink Cripps Apples</h3>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div onclick="document.getElementById('selectedpears').style.display='block';" class="well well-lg pears" id="pears">
+                <a class='circle_wrapper' >
+                  <div class='circle_over'>
+                    <div class='check blur'>✓</div>
+                    <div class='check lime'>✓</div>
+                    <div class='check fade'>✓</div>
+                  </div>
+                  <div class='circle'></div>
+                </a>
+                <h3>Pear</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-4">
+              <div onclick="document.getElementById('selectedbananas').style.display='block';" class="well well-lg bananas" id="bananas">
+                <a class='circle_wrapper' >
+                  <div class='circle_over'>
+                    <div class='check blur'>✓</div>
+                    <div class='check lime'>✓</div>
+                    <div class='check fade'>✓</div>
+                  </div>
+                  <div class='circle'></div>
+                </a>
+                <h3>Banana</h3>
+              </div>
+            </div>
+
+            <div class="col-sm-4">
+              <div onclick="document.getElementById('selectedoranges').style.display='block';" class="well well-lg oranges" id="oranges">
+                <a class='circle_wrapper' >
+                  <div class='circle_over'>
+                    <div class='check blur'>✓</div>
+                    <div class='check lime'>✓</div>
+                    <div class='check fade'>✓</div>
+                  </div>
+                  <div class='circle'></div>
+                </a>
+                <h3>Orange</h3>
+              </div>
+            </div>
+
+            <div class="col-sm-4">
+              <div onclick="document.getElementById('selectedlemons').style.display='block';" class="well well-lg lemons" id="lemons">
+                <a class='circle_wrapper' >
+                  <div class='circle_over'>
+                    <div class='check blur'>✓</div>
+                    <div class='check lime'>✓</div>
+                    <div class='check fade'>✓</div>
+                  </div>
+                  <div class='circle'></div>
+                </a>
+                <h3>Lemon</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-4">
+              <div onclick="document.getElementById('selectedpineapple').style.display='block';" class="well well-lg pineapple" id="pineapple">
+                <a class='circle_wrapper' >
+                  <div class='circle_over'>
+                    <div class='check blur'>✓</div>
+                    <div class='check lime'>✓</div>
+                    <div class='check fade'>✓</div>
+                  </div>
+                  <div class='circle'></div>
+                </a>
+                <h3>Pineapple</h3>
+              </div>
+            </div>
+
+            <div class="col-sm-4">
+              <div onclick="document.getElementById('selectedblueberry').style.display='block';" class="well well-lg blueberry" id="blueberry">
+                <a class='circle_wrapper' >
+                  <div class='circle_over'>
+                    <div class='check blur'>✓</div>
+                    <div class='check lime'>✓</div>
+                    <div class='check fade'>✓</div>
+                  </div>
+                  <div class='circle'></div>
+                </a>
+                <h3>Blueberry</h3>
+              </div>
+            </div>
+
+            <div class="col-sm-4">
+              <div onclick="document.getElementById('selectedpeach').style.display='block';" class="well well-lg peach" id="peach">
+                <a class='circle_wrapper' >
+                  <div class='circle_over'>
+                    <div class='check blur'>✓</div>
+                    <div class='check lime'>✓</div>
+                    <div class='check fade'>✓</div>
+                  </div>
+                  <div class='circle'></div>
+                </a>
+                <h3>Peach</h3>
+              </div>
+            </div>
+          </div>
+
+          <button id="vegbutton" onclick="document.getElementById('vegjuice').style.display='block'; document.getElementById('seednut').style.display='none'; document.getElementById('sweeteners').style.display='none'; document.getElementById('fruitjuice').style.display='none';" type="button" class="btn btn-primary btn-lg">Veggies</button>
+          <button id="sandnbutton" onclick="document.getElementById('seednut').style.display='block'; document.getElementById('vegjuice').style.display='none'; document.getElementById('sweeteners').style.display='none'; document.getElementById('fruitjuice').style.display='none';" type="button" class="btn btn-primary btn-lg">Seeds and Nuts</button>
+          <button id="sweetenerbutton" onclick="document.getElementById('sweeteners').style.display='block'; document.getElementById('vegjuice').style.display='none'; document.getElementById('seednut').style.display='none'; document.getElementById('fruitjuice').style.display='none';" type="button" class="btn btn-primary btn-lg">Sweeteners</button>
+
+
+
+        </div><!--fruitjuice finish-->
+
+        <div class="row" id="vegjuice">
+
+          <div class="row">
+
+            <div class="col-sm-4">
+              <div onclick="document.getElementById('selectedtomato').style.display='block';" class="well well-lg tomato" id="tomato">
+                <a class='circle_wrapper' >
+                  <div class='circle_over'>
+                    <div class='check blur'>✓</div>
+                    <div class='check lime'>✓</div>
+                    <div class='check fade'>✓</div>
+                  </div>
+                  <div class='circle'></div>
+                </a>
+                <h3>Tomato</h3>
+              </div>
+            </div>
+
+            <div class="col-sm-4">
+              <div onclick="document.getElementById('selectedcucumber').style.display='block';" class="well well-lg cucumber" id="cucumber">
+                <a class='circle_wrapper' >
+                  <div class='circle_over'>
+                    <div class='check blur'>✓</div>
+                    <div class='check lime'>✓</div>
+                    <div class='check fade'>✓</div>
+                  </div>
+                  <div class='circle'></div>
+                </a>
+                <h3>Cucumber</h3>
+              </div>
+            </div>
+
+            <div class="col-sm-4">
+              <div onclick="document.getElementById('selectedkale').style.display='block';" class="well well-lg kale" id="kale">
+                <a class='circle_wrapper' >
+                  <div class='circle_over'>
+                    <div class='check blur'>✓</div>
+                    <div class='check lime'>✓</div>
+                    <div class='check fade'>✓</div>
+                  </div>
+                  <div class='circle'></div>
+                </a>
+                <h3>Kale</h3>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="row">
+
+            <div class="col-sm-4">
+              <div onclick="document.getElementById('selectedlettuce').style.display='block';" class="well well-lg lettuce" id="lettuce">
+                <a class='circle_wrapper' >
+                  <div class='circle_over'>
+                    <div class='check blur'>✓</div>
+                    <div class='check lime'>✓</div>
+                    <div class='check fade'>✓</div>
+                  </div>
+                  <div class='circle'></div>
+                </a>
+                <h3>Lettuce</h3>
+              </div>
+            </div>
+
+            <div class="col-sm-4">
+              <div onclick="document.getElementById('selectedcellery').style.display='block';" class="well well-lg cellery" id="cellery">
+                <a class='circle_wrapper' >
+                  <div class='circle_over'>
+                    <div class='check blur'>✓</div>
+                    <div class='check lime'>✓</div>
+                    <div class='check fade'>✓</div>
+                  </div>
+                  <div class='circle'></div>
+                </a>
+                <h3>Cellery</h3>
+              </div>
+            </div>
+
+            <div class="col-sm-4">
+              <div onclick="document.getElementById('selectedspinach').style.display='block';" class="well well-lg spinach" id="spinach">
+                <a class='circle_wrapper' >
+                  <div class='circle_over'>
+                    <div class='check blur'>✓</div>
+                    <div class='check lime'>✓</div>
+                    <div class='check fade'>✓</div>
+                  </div>
+                  <div class='circle'></div>
+                </a>
+                <h3>Spinach</h3>
+              </div>
+            </div>
+
+          </div>
+
+          <button id="sandnbutton" onclick="document.getElementById('seednut').style.display='block'; document.getElementById('vegjuice').style.display='none'; document.getElementById('sweeteners').style.display='none'; document.getElementById('fruitjuice').style.display='none';" type="button" class="btn btn-primary btn-lg">Seeds and Nuts</button>
+          <button id="sweetenerbutton" onclick="document.getElementById('sweeteners').style.display='block'; document.getElementById('vegjuice').style.display='none'; document.getElementById('seednut').style.display='none'; document.getElementById('fruitjuice').style.display='none';" type="button" class="btn btn-primary btn-lg">Sweeteners</button>
+          <button id="fruitbutton" onclick="document.getElementById('sweeteners').style.display='none'; document.getElementById('vegjuice').style.display='none'; document.getElementById('seednut').style.display='none'; document.getElementById('fruitjuice').style.display='block';" type="button" class="btn btn-primary btn-lg">Fruits</button>
+
+        </div>
+
+        <div class="row" id="seednut">
+
+          <div class="row">
+
+            <div class="col-sm-4">
+              <div onclick="document.getElementById('selectedalmonds').style.display='block';" class="well well-lg almonds" id="almonds">
+                <a class='circle_wrapper' >
+                  <div class='circle_over'>
+                    <div class='check blur'>✓</div>
+                    <div class='check lime'>✓</div>
+                    <div class='check fade'>✓</div>
+                  </div>
+                  <div class='circle'></div>
+                </a>
+                <h3>Almond</h3>
+              </div>
+            </div>
+
+            <div class="col-sm-4">
+              <div onclick="document.getElementById('selectedchiaseed').style.display='block';" class="well well-lg chiaseed" id="chiaseed">
+                <a class='circle_wrapper' >
+                  <div class='circle_over'>
+                    <div class='check blur'>✓</div>
+                    <div class='check lime'>✓</div>
+                    <div class='check fade'>✓</div>
+                  </div>
+                  <div class='circle'></div>
+                </a>
+                <h3>Chia Seed</h3>
+              </div>
+            </div>
+
+            <div class="col-sm-4">
+              <div onclick="document.getElementById('selectedflaxseed').style.display='block';" class="well well-lg flaxseed" id="flaxseed">
+                <a class='circle_wrapper' >
+                  <div class='circle_over'>
+                    <div class='check blur'>✓</div>
+                    <div class='check lime'>✓</div>
+                    <div class='check fade'>✓</div>
+                  </div>
+                  <div class='circle'></div>
+                </a>
+                <h3>Flax seed</h3>
+              </div>
+            </div>
+
+          </div>
+          <div class="row">
+
+            <div class="col-sm-4">
+              <div onclick="document.getElementById('selectedwalnut').style.display='block';" class="well well-lg walnut" id="walnut">
+                <a class='circle_wrapper' >
+                  <div class='circle_over'>
+                    <div class='check blur'>✓</div>
+                    <div class='check lime'>✓</div>
+                    <div class='check fade'>✓</div>
+                  </div>
+                  <div class='circle'></div>
+                </a>
+                <h3>Walnut</h3>
+              </div>
+            </div>
+
+          </div>
+
+          <button id="vegbutton" onclick="document.getElementById('vegjuice').style.display='block'; document.getElementById('seednut').style.display='none'; document.getElementById('sweeteners').style.display='none'; document.getElementById('fruitjuice').style.display='none';" type="button" class="btn btn-primary btn-lg">Veggies</button>
+          <button id="sweetenerbutton" onclick="document.getElementById('sweeteners').style.display='block'; document.getElementById('vegjuice').style.display='none'; document.getElementById('seednut').style.display='none'; document.getElementById('fruitjuice').style.display='none';" type="button" class="btn btn-primary btn-lg">Sweeteners</button>
+          <button id="fruitbutton" onclick="document.getElementById('sweeteners').style.display='none'; document.getElementById('vegjuice').style.display='none'; document.getElementById('seednut').style.display='none'; document.getElementById('fruitjuice').style.display='block';" type="button" class="btn btn-primary btn-lg">Fruits</button>
+
+        </div>
+
+        <div class="row" id="sweeteners">
+
+          <div class="row">
+            <div class="col-sm-4">
+              <div onclick="document.getElementById('selectedhoney').style.display='block';" class="well well-lg honey" id="honey">
+                <a class='circle_wrapper' >
+                  <div class='circle_over'>
+                    <div class='check blur'>✓</div>
+                    <div class='check lime'>✓</div>
+                    <div class='check fade'>✓</div>
+                  </div>
+                  <div class='circle'></div>
+                </a>
+                <h3>Honey</h3>
+              </div>
+            </div>
+          </div>
+
+          <button id="vegbutton" onclick="document.getElementById('vegjuice').style.display='block'; document.getElementById('seednut').style.display='none'; document.getElementById('sweeteners').style.display='none'; document.getElementById('fruitjuice').style.display='none';" type="button" class="btn btn-primary btn-lg">Veggies</button>
+          <button id="sandnbutton" onclick="document.getElementById('seednut').style.display='block'; document.getElementById('vegjuice').style.display='none'; document.getElementById('sweeteners').style.display='none'; document.getElementById('fruitjuice').style.display='none';" type="button" class="btn btn-primary btn-lg">Seeds and Nuts</button>
+          <button id="fruitbutton" onclick="document.getElementById('sweeteners').style.display='none'; document.getElementById('vegjuice').style.display='none'; document.getElementById('seednut').style.display='none'; document.getElementById('fruitjuice').style.display='block';" type="button" class="btn btn-primary btn-lg">Fruits</button>
+
+        </div>
+
+    </div>
+
+  </body>
+</html>
